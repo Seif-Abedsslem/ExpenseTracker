@@ -1,4 +1,2 @@
-# Hello from Read me
+# Expensces Tracker
 
-Hello again
-Hello again
