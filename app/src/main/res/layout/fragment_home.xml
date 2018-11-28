@@ -35,41 +35,39 @@
         android:id="@+id/textView_expenses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginRight="8dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="Total Expenses"
         android:textColor="@color/colorAccentDark"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/textview_total"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+         />
 
 
     <TextView
         android:id="@+id/textview_total"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="225dp"
+
+
+
         android:text="0.0"
         android:textColor="@color/colorAccentDark"
         android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/buttton_limit"
         style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="45dp"
         android:text="Set Expense Limit"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="14sp"
@@ -81,11 +79,18 @@
 
     <Button
         android:id="@+id/button_ok"
-        android:layout_width="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="55dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/buttton_limit"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-51dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginRight="155dp"
+        android:text="ok"
         android:textColor="@android:color/holo_green_dark"
-        android:textStyle="bold"
+        android:textStyle="bold|italic"
         android:visibility="invisible" />
 
     <EditText
@@ -93,8 +98,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/home1"
-        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-9dp"
+        android:layout_toEndOf="@+id/buttton_limit"
         android:hint="Set limit"
+        android:inputType="number"
         android:selectAllOnFocus="true"
         android:visibility="invisible" />
 
@@ -105,7 +112,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="200dp"
         android:clickable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

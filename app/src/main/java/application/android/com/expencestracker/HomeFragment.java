@@ -11,31 +11,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
-
-import android.widget.ArrayAdapter;
-import android.widget.CursorAdapter;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
-
 import android.widget.Button;
+import android.widget.CursorAdapter;
 import android.widget.EditText;
-
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 import application.android.com.expencestracker.DBImp.ExpenseDaoImpl;
-
-import java.util.HashMap;
-
 import application.android.com.expencestracker.DBImp.UserTableImp;
-
 import application.android.com.expencestracker.Model.UserSessionManager;
 
 import static application.android.com.expencestracker.MainActivity.username;
