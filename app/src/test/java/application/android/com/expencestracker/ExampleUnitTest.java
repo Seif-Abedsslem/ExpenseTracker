@@ -1,7 +1,6 @@
 package application.android.com.expencestracker;
 
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 /**

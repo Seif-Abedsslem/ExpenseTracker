@@ -77,7 +77,7 @@ public class ExpenseDaoImpl{
      * @param userid the user id which user wants to search for.
      * @return return a cursor, if the user id isn't found, return null
      */
-        public Cursor getExpenseList(int userid) {
+    public Cursor getExpenseList(int userid) {
         db = sqLiteUtil.getWritableDatabase();
         List<Expense> list = new ArrayList<Expense>();
         String querySql="select expenseid _id,* from " + DBdesign.EXPENSE_TABLE_NAME + " where " + DBdesign.EXPENSE_TABLE_INFO_COLUM_USER + "=" + userid + " order by " + DBdesign.EXPENSE_TABLE_INFO_COLUM_DATE+ " desc";
