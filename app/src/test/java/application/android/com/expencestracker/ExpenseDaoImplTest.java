@@ -26,13 +26,13 @@ public class ExpenseDaoImplTest {
     public void add() {
         Expense e=new Expense(10,"Rent", new Date(), 10);
         expenseDao.add(e);
-        List<Expense> expenses = expenseDao.getExpenseList("where user=10;");
+        List<Expense> expenses = expenseDao.getExpenseList(" where user=10;");
         assertTrue(expenses.size() == 1);
         assertTrue(expenses.get(0).getAmount()==e.getAmount());
         assertTrue(expenses.get(0).getCategory().equals(e.getCategory()));
 
         assertTrue(expenses.get(0).getUser()==e.getUser());
-        assertTrue(expenses.get(0).getDate().getTime() == new Date(1543126595000L).getTime());
+       
     }
 
 
